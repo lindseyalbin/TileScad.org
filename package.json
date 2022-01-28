@@ -1,0 +1,35 @@
+{
+  "name": "pod-it-algorithm",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm run build--debug -- --no-source-maps",
+    "build--debug": "cd frontend && parcel build public/*.html public/*.jpg public/*.ico public/*.png public/*.svg public/*.webmanifest public/*.xml",
+    "start": "gunicorn -b 127.0.0.1:8080 server:app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Capstone-Team-4-UARK-2022/TileScad.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Capstone-Team-4-UARK-2022/TileScad.org/issues"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "homepage": "https://github.com/Capstone-Team-4-UARK-2022/TileScad.org#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}

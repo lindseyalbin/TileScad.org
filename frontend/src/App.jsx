@@ -16,6 +16,7 @@ export default () => {
           <Route path="/upload" exact component={UploadPage} />
         </Switch>
       </Router>
+
       {/* <HomePage />
       <AboutPage />
       <DesignPage />
